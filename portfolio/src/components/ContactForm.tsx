@@ -21,7 +21,7 @@ export default function ContactForm() {
       await new Promise(resolve => setTimeout(resolve, 1000))
       setStatus('success')
       setFormData({ name: '', email: '', message: '' })
-    } catch (error) {
+    } catch {
       setStatus('error')
     }
   }
@@ -94,7 +94,7 @@ export default function ContactForm() {
         </div>
         {status === 'success' && (
           <p className="text-green-600 dark:text-green-400 text-center">
-            Thank you for your message! I'll get back to you soon.
+            Thank you for your message! I&apos;ll get back to you soon.
           </p>
         )}
         {status === 'error' && (

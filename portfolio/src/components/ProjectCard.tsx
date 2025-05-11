@@ -24,10 +24,9 @@ export default function ProjectCard({
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5, type: 'tween' }}
       viewport={{ once: true }}
       whileHover={{ scale: 1.04, boxShadow: '0 8px 32px 0 rgba(80, 80, 200, 0.15)' }}
-      transition={{ type: 'tween', duration: 0.4 }}
       className="bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-950 rounded-2xl overflow-hidden shadow-xl border border-blue-100 dark:border-gray-800 flex flex-col h-full"
     >
       <div className="relative w-full h-48">

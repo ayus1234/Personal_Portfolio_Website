@@ -56,7 +56,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="flex space-x-8 mb-6"
         >
-          {socialLinks.map((link, i) => (
+          {socialLinks.map((link) => (
             <motion.a
               key={link.name}
               href={link.url}
