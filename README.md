@@ -2,6 +2,20 @@
 
 This is a personal portfolio website built with [Next.js](https://nextjs.org) and deployed on Netlify.
 
+## Portfolio Screenshots
+
+### Home Page
+![Portfolio Home Page](https://github.com/ayus1234/Portfolio_Website/raw/main/screenshots/portfolio-home.png)
+
+### About Section
+![About Section](https://github.com/ayus1234/Portfolio_Website/raw/main/screenshots/portfolio-about.png)
+
+### Projects Section
+![Projects Section](https://github.com/ayus1234/Portfolio_Website/raw/main/screenshots/portfolio-projects.png)
+
+### Contact Section
+![Contact Section](https://github.com/ayus1234/Portfolio_Website/raw/main/screenshots/portfolio-contact.png)
+
 ## Getting Started
 
 First, run the development server:
