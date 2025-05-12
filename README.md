@@ -5,16 +5,24 @@ This is a personal portfolio website built with [Next.js](https://nextjs.org) an
 ## Portfolio Screenshots
 
 ### Home Page
-![Portfolio Home Page](https://github.com/ayus1234/Portfolio_Website/raw/main/screenshots/portfolio-home.png)
+![Screenshot 2025-05-11 221925](https://github.com/user-attachments/assets/8ec9021e-cba9-4410-9499-9708901762d0)
+
 
 ### About Section
-![About Section](https://github.com/ayus1234/Portfolio_Website/raw/main/screenshots/portfolio-about.png)
+![Screenshot 2025-05-11 222045](https://github.com/user-attachments/assets/a5fe97d4-cf82-4f42-a027-25a725fb92fc)
+
 
 ### Projects Section
-![Projects Section](https://github.com/ayus1234/Portfolio_Website/raw/main/screenshots/portfolio-projects.png)
+![Screenshot 2025-05-11 222116](https://github.com/user-attachments/assets/6682f56e-8980-4432-ae0d-a369d0b5290c)
+
 
 ### Contact Section
-![Contact Section](https://github.com/ayus1234/Portfolio_Website/raw/main/screenshots/portfolio-contact.png)
+![Screenshot 2025-05-11 222153](https://github.com/user-attachments/assets/8fea92a4-f2da-467c-9a2e-197674494aa8)
+
+
+### Footer Section
+![Screenshot 2025-05-11 222231](https://github.com/user-attachments/assets/86c19b68-6050-42fa-8d06-1d63c703d121)
+
 
 ## Getting Started
 
