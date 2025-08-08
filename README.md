@@ -13,7 +13,7 @@ This is a personal portfolio website built with [Next.js](https://nextjs.org) an
 
 
 ### Projects Section
-![Screenshot 2025-05-11 222116](https://github.com/user-attachments/assets/6682f56e-8980-4432-ae0d-a369d0b5290c)
+<img width="1268" height="559" alt="Screenshot 2025-08-08 210134" src="https://github.com/user-attachments/assets/90bc0a66-c162-4a65-b68b-e83589db06b8" />
 
 
 ### Contact Section
