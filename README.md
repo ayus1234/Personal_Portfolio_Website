@@ -1,53 +1,162 @@
-# Ayush Nathani - Personal Portfolio
+# Ayush Nathani — Software Engineer
 
-A modern, high-performance portfolio website built with [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com). This project showcases my skills, projects, and professional background with a premium, dark-themed aesthetic.
+> **Software Engineer | Builds scalable web apps with Next.js & TypeScript | Strong in DSA, ML, and production-grade UI**
 
-## 🚀 Features
+This repository contains the source code for my **personal portfolio website**, designed and built to demonstrate **frontend engineering depth**, **clean system design**, and **end-to-end ownership** of production-ready applications.
 
-- **Modern Tech Stack**: Built with Next.js 15+ (App Router), React 19, and TypeScript.
-- **Responsive Design**: Fully responsive layout that looks great on all devices.
-- **Dark Mode Aesthetic**: A sleek, professional dark theme with carefully selected color palettes.
-- **Animations**: Smooth transitions and interactions using [Framer Motion](https://www.framer.com/motion/).
-- **Project Showcase**: specific cards to display projects like "E-DALL-E" with GitHub-style headers.
-- **Contact Form**: Integrated contact form with validation and loading states.
+📌 *Resume-linked project showcasing real-world engineering skills, not just UI.*
 
-## 🛠️ Tech Stack
+---
 
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Heroicons](https://heroicons.com/)
-- **Deployment**: [Vercel](https://vercel.com)
+## 🔗 Important Links
 
-## 🏁 Getting Started
+- 🌐 [Portfolio Website](https://personal-portfolio-website-srxo.vercel.app/)
+- 📄 [Resume](https://drive.google.com/file/d/1KshVXc0J-LndJgQKn_sfqxzX7PyXVX9T/view?usp=sharing)
+- 💻 [GitHub](https://github.com/ayus1234/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/ayush-nathani/)
 
-First, install the dependencies:
+
+---
+
+## 🎯 Engineering Focus
+
+- Build high-performance, scalable web applications  
+- Apply modern **React & Next.js (App Router)** architecture  
+- Maintain clean, readable, and maintainable code  
+- Deliver polished UI/UX with accessibility in mind  
+- Demonstrate problem-solving across **frontend, backend, and ML**
+
+---
+
+## 🧱 Architecture & Design
+
+- **Framework:** Next.js (App Router)
+- **Rendering:** Server Components by default, Client Components where necessary
+- **Styling:** Utility-first CSS with Tailwind
+- **Animations:** Declarative motion using Framer Motion
+- **Type Safety:** TypeScript across the codebase
+- **Deployment:** Edge-optimized via Vercel
+
+---
+
+## 🛠️ Tech Stack (Snapshot)
+
+### Languages
+- TypeScript, JavaScript  
+- C / C++  
+- Python, Java  
+
+### Frontend
+- React 19  
+- Next.js  
+- Tailwind CSS  
+- Framer Motion  
+
+### AI / ML
+- Scikit-learn  
+- PyTorch  
+- OpenCV  
+- Pandas, NumPy  
+
+### Tooling
+- Git & GitHub  
+- ESLint, Prettier  
+- Linux, VS Code  
+
+---
+
+## 🚀 Selected Projects
+
+### [EcoShift — Carbon Footprint Tracker](https://github.com/ayus1234/EcoShift---A-Carbon-Footprint-Tracker-App)
+
+- Built a sustainability tracking platform focused on clarity and usability  
+- Implemented authentication, filtering, and export features  
+- Designed data visualization for actionable insights  
+
+**Tech:** Node.js, Express, SQLite, Chart.js
+
+---
+
+### [EV Vehicle Prediction & Forecasting](https://github.com/ayus1234/EV_Vehicle_Prediction)
+
+- Designed an end-to-end ML pipeline for EV adoption forecasting  
+- Applied Random Forest Regression on historical datasets  
+- Delivered insights via an interactive dashboard  
+
+**Tech:** Python, Scikit-learn, Pandas, Streamlit
+
+---
+
+### [E-DALL-E — Image Generation & Expansion System](https://github.com/ayus1234/E-DALL-E-Image-Generation-and-Expansion-System)
+
+- Implemented text-to-image generation using modern generative models  
+- Focused on image expansion and visual consistency  
+- Explored practical applications of generative AI  
+
+**Tech:** PyTorch, VQGAN+CLIP, DALL-E Mini
+
+---
+
+## 📈 Engineering Quality & Performance
+
+- Optimized routing and rendering using Next.js App Router  
+- Minimal client-side JavaScript where possible  
+- Modular, reusable components  
+- Responsive-first and accessible UI  
+- Production-ready CI/CD via Vercel  
+
+---
+
+## 📂 Project Structure
+
+```bash
+
+├── app/            # Next.js App Router pages & layouts
+├── components/     # Reusable, modular UI components
+├── lib/            # Utilities, helpers, and type definitions
+├── public/         # Static assets (optimized images, fonts)
+└── styles/         # Global styles and Tailwind configuration
+```
+
+---
+
+## 🧪 Local Development
 
 ```bash
 npm install
-# or
-yarn install
+npm run dev
 ```
 
-Then, run the development server:
+Runs locally at:
 
 ```bash
-npm run dev
-# or
-yarn dev
+http://localhost:3000
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 📦 Deployment
-
-This project is optimized for deployment on [Vercel](https://vercel.com/).
-
-1.  Push your code to a GitHub repository.
-2.  Import the project into Vercel.
-3.  Vercel will automatically detect the Next.js configuration and deploy.
 
 ## 📄 License
 
-This project is for personal use and showcase.
+This repository is part of my **professional engineering portfolio** and is intended for **resume-based recruiter review**.
+
+---
+
+## 👋 About Me
+
+**Ayush Nathani**  
+MCA Student — IIT Patna & IIT Ranchi  
+Interested in **Frontend Systems, Full-Stack Engineering, and Applied AI**
+
+---
+
+## 📬 Contact
+
+If you reached this repository via my resume, feel free to connect:
+
+- 📧 [Email](ayushnathani1234@gmail.com)
+- 📞 [Phone](+916200509101)  
+
+
+---
+
+## ⭐ Reviewer Note
+
+Happy to discuss design decisions, trade-offs, or scaling considerations.
