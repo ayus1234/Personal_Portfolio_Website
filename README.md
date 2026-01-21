@@ -151,9 +151,7 @@ Interested in **Frontend Systems, Full-Stack Engineering, and Applied AI**
 
 If you reached this repository via my resume, feel free to connect:
 
-- 📧 [Email](ayushnathani1234@gmail.com)
-- 📞 [Phone](+916200509101)  
-
+ 📧 [Email](mailto:ayushnathani1234@gmail.com)
 
 ---
 
