@@ -47,14 +47,16 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-blue-900 via-purple-900 to-gray-900 text-white dark:text-gray-200 py-10">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+    <footer className="bg-[#030712] py-16 relative overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-purple-600/20 blur-[150px] rounded-full -z-10" />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex space-x-8 mb-6"
+          className="flex space-x-10 mb-8"
         >
           {socialLinks.map((link) => (
             <motion.a
@@ -62,8 +64,8 @@ export default function Footer() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-pink-400 transition-colors"
-              whileHover={{ scale: 1.2, rotate: [0, 10, -10, 0] }}
+              className="text-slate-400 hover:text-white transition-all duration-300"
+              whileHover={{ scale: 1.1 }}
               transition={{ type: 'tween', duration: 0.4 }}
               title={link.name}
             >
@@ -72,8 +74,8 @@ export default function Footer() {
             </motion.a>
           ))}
         </motion.div>
-        <p className="text-sm text-gray-300 mb-1">© {new Date().getFullYear()} Ayush Nathani. All rights reserved.</p>
-        <p className="text-sm text-gray-400">Contact: (+91) 6200509101</p>
+        <p className="text-slate-400 font-medium mb-2">© {new Date().getFullYear()} Ayush Nathani. All rights reserved.</p>
+        <p className="text-slate-500 text-sm">Contact: (+91) 6200509101</p>
       </div>
     </footer>
   )

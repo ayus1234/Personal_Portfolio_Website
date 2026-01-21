@@ -42,7 +42,7 @@ export default function ContactForm() {
     >
       <div className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          <label htmlFor="name" className="block text-base font-semibold text-slate-300 mb-2">
             Name
           </label>
           <input
@@ -52,11 +52,11 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="mt-2 block w-full rounded-xl border-slate-700 bg-slate-800/50 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4 transition-all duration-300"
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          <label htmlFor="email" className="block text-base font-semibold text-slate-300 mb-2">
             Email
           </label>
           <input
@@ -66,11 +66,11 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="mt-2 block w-full rounded-xl border-slate-700 bg-slate-800/50 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4 transition-all duration-300"
           />
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          <label htmlFor="message" className="block text-base font-semibold text-slate-300 mb-2">
             Message
           </label>
           <textarea
@@ -80,14 +80,14 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             rows={4}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="mt-2 block w-full rounded-xl border-slate-700 bg-slate-800/50 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4 transition-all duration-300"
           />
         </div>
         <div>
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full flex justify-center py-4 px-4 border border-transparent rounded-xl shadow-xl text-base font-bold text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status === 'loading' ? 'Sending...' : 'Send Message'}
           </button>
