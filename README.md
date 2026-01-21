@@ -11,7 +11,7 @@ This repository contains the source code for my **personal portfolio website**, 
 ## 🔗 Important Links
 
 - 🌐 [Portfolio Website](https://personal-portfolio-website-srxo.vercel.app/)
-- 📄 [Resume](https://drive.google.com/file/d/1KshVXc0J-LndJgQKn_sfqxzX7PyXVX9T/view?usp=sharing)
+- 📄 [Resume](https://drive.google.com/file/d/15uTC_v28bsXpVm2MXEX5EIyaUTem_2pK/view?usp=sharing)
 - 💻 [GitHub](https://github.com/ayus1234/)
 - 💼 [LinkedIn](https://www.linkedin.com/in/ayush-nathani/)
 
