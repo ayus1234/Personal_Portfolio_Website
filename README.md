@@ -135,7 +135,9 @@ http://localhost:3000
 
 ## 📄 License
 
-This repository is part of my **professional engineering portfolio** and is intended for **resume-based recruiter review**.
+This project is licensed under the **MIT License**.
+
+See the [LICENSE](LICENSE) file for full details.
 
 ---
 
