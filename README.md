@@ -1,162 +1,53 @@
-# Ayush Nathani — Software Engineer
+# Ayush Nathani - Personal Portfolio
 
-> **Software Engineer | Builds scalable web apps with Next.js & TypeScript | Strong in DSA, ML, and production-grade UI**
+A modern, high-performance, and visually stunning portfolio website built with [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com). This project features a sophisticated multi-theme system and premium UI components designed for an elite developer experience.
 
-This repository contains the source code for my **personal portfolio website**, designed and built to demonstrate **frontend engineering depth**, **clean system design**, and **end-to-end ownership** of production-ready applications.
+## 🚀 Features
 
-📌 *Resume-linked project showcasing real-world engineering skills, not just UI.*
+- **Multi-Theme System**: Seamlessly switch between three distinct, professionally curated themes:
+  - **Dark**: A sleek, premium developer aesthetic with deep purples and pinks.
+  - **Vibe (Ocean)**: A calming, vibrant teal and navy blue aesthetic.
+  - **Light**: A high-contrast, clean, and modern off-white theme with ultra-soft shadows.
+- **Dynamic Theme Switcher**: An interactive navigation component with custom-designed stylish icons and glow effects.
+- **Responsive & Clean UI**: Perfectly balanced layouts with a focus on typography and geometric precision.
+- **Premium Animations**: Smooth, performant interactions using [Framer Motion](https://www.framer.com/motion/), including magnetic elements and typewriter effects.
+- **Project Showcase**: GitHub-style repository cards with dynamic technology tags and GitHub integration.
+- **Dynamic Scroll Progress**: A color-adaptive progress indicator at the top of the viewport.
+- **Optimized Contact Form**: A fully functional contact form with solid theme-aware backgrounds and clear validation.
 
----
+## 🛠️ Tech Stack
 
-## 🔗 Important Links
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (CSS Variable-based Theme System)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Heroicons](https://heroicons.com/) & Custom High-End SVGs
+- **Theming**: [next-themes](https://github.com/pacocoursey/next-themes)
 
-- 🌐 [Portfolio Website](https://personal-portfolio-website-srxo.vercel.app/)
-- 📄 [Resume](https://drive.google.com/file/d/15uTC_v28bsXpVm2MXEX5EIyaUTem_2pK/view?usp=sharing)
-- 💻 [GitHub](https://github.com/ayus1234/)
-- 💼 [LinkedIn](https://www.linkedin.com/in/ayush-nathani/)
+## 🏁 Getting Started
 
-
----
-
-## 🎯 Engineering Focus
-
-- Build high-performance, scalable web applications  
-- Apply modern **React & Next.js (App Router)** architecture  
-- Maintain clean, readable, and maintainable code  
-- Deliver polished UI/UX with accessibility in mind  
-- Demonstrate problem-solving across **frontend, backend, and ML**
-
----
-
-## 🧱 Architecture & Design
-
-- **Framework:** Next.js (App Router)
-- **Rendering:** Server Components by default, Client Components where necessary
-- **Styling:** Utility-first CSS with Tailwind
-- **Animations:** Declarative motion using Framer Motion
-- **Type Safety:** TypeScript across the codebase
-- **Deployment:** Edge-optimized via Vercel
-
----
-
-## 🛠️ Tech Stack (Snapshot)
-
-### Languages
-- TypeScript, JavaScript  
-- C / C++  
-- Python, Java  
-
-### Frontend
-- React 19  
-- Next.js  
-- Tailwind CSS  
-- Framer Motion  
-
-### AI / ML
-- Scikit-learn  
-- PyTorch  
-- OpenCV  
-- Pandas, NumPy  
-
-### Tooling
-- Git & GitHub  
-- ESLint, Prettier  
-- Linux, VS Code  
-
----
-
-## 🚀 Selected Projects
-
-### [EcoShift — Carbon Footprint Tracker](https://github.com/ayus1234/EcoShift---A-Carbon-Footprint-Tracker-App)
-
-- Built a sustainability tracking platform focused on clarity and usability  
-- Implemented authentication, filtering, and export features  
-- Designed data visualization for actionable insights  
-
-**Tech:** Node.js, Express, SQLite, Chart.js
-
----
-
-### [EV Vehicle Prediction & Forecasting](https://github.com/ayus1234/EV_Vehicle_Prediction)
-
-- Designed an end-to-end ML pipeline for EV adoption forecasting  
-- Applied Random Forest Regression on historical datasets  
-- Delivered insights via an interactive dashboard  
-
-**Tech:** Python, Scikit-learn, Pandas, Streamlit
-
----
-
-### [E-DALL-E — Image Generation & Expansion System](https://github.com/ayus1234/E-DALL-E-Image-Generation-and-Expansion-System)
-
-- Implemented text-to-image generation using modern generative models  
-- Focused on image expansion and visual consistency  
-- Explored practical applications of generative AI  
-
-**Tech:** PyTorch, VQGAN+CLIP, DALL-E Mini
-
----
-
-## 📈 Engineering Quality & Performance
-
-- Optimized routing and rendering using Next.js App Router  
-- Minimal client-side JavaScript where possible  
-- Modular, reusable components  
-- Responsive-first and accessible UI  
-- Production-ready CI/CD via Vercel  
-
----
-
-## 📂 Project Structure
-
-```bash
-
-├── app/            # Next.js App Router pages & layouts
-├── components/     # Reusable, modular UI components
-├── lib/            # Utilities, helpers, and type definitions
-├── public/         # Static assets (optimized images, fonts)
-└── styles/         # Global styles and Tailwind configuration
-```
-
----
-
-## 🧪 Local Development
+First, install the dependencies:
 
 ```bash
 npm install
-npm run dev
 ```
 
 Runs locally at:
 
 ```bash
-http://localhost:3000
+npm run dev
 ```
+
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+
+## 📦 Deployment
+
+This project is optimized for deployment on [Vercel](https://vercel.com/).
+
+1. Push your code to a GitHub repository.
+2. Import the project into Vercel.
+3. Vercel will automatically detect the Next.js configuration and deploy.
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
-
-See the [LICENSE](LICENSE) file for full details.
-
----
-
-## 👋 About Me
-
-**Ayush Nathani**  
-MCA Student — IIT Patna & IIT Ranchi  
-Interested in **Frontend Systems, Full-Stack Engineering, and Applied AI**
-
----
-
-## 📬 Contact
-
-If you reached this repository via my resume, feel free to connect:
-
- 📧 [Email](mailto:ayushnathani1234@gmail.com)
-
----
-
-## ⭐ Reviewer Note
-
-Happy to discuss design decisions, trade-offs, or scaling considerations.
+This project is for personal use and showcase.
