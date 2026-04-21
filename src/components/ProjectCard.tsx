@@ -29,10 +29,12 @@ export default function ProjectCard({
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
       whileHover={{
-        y: -8,
-        scale: 1.01,
+        y: -12,
+        scale: 1.02,
+        transition: { type: "spring", stiffness: 400, damping: 17 }
       }}
-      className="group rounded-[2rem] overflow-hidden shadow-xl border border-card-border/50 flex flex-col h-full bg-card transition-all duration-300 hover:border-primary-from/30 dark:hover:border-primary-from/30"
+      className="group rounded-[2rem] overflow-hidden shadow-xl border border-card-border/50 flex flex-col h-full bg-card transition-colors duration-200 hover:border-primary-from/30 dark:hover:border-primary-from/30"
+
     >
       {/* Top Section: GitHub Style Header */}
       <div className="bg-subtle-bg p-6 relative">
