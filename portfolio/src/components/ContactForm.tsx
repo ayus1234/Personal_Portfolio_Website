@@ -33,6 +33,7 @@ export default function ContactForm() {
           <input
             type="text"
             id="name"
+            autoComplete="name"
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -47,6 +48,7 @@ export default function ContactForm() {
           <input
             type="email"
             id="email"
+            autoComplete="email"
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}

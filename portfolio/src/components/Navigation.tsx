@@ -206,15 +206,17 @@ export default function Navigation() {
               >
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <motion.path
+                    d="M 4 6 L 20 6"
                     animate={isMobileMenuOpen ? { d: "M 18 6 L 6 18" } : { d: "M 4 6 L 20 6" }}
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />
                   <motion.path
-                    animate={isMobileMenuOpen ? { opacity: 0, x: -20 } : { opacity: 1, x: 0 }}
                     d="M 4 12 L 20 12"
+                    animate={isMobileMenuOpen ? { opacity: 0, x: -20 } : { opacity: 1, x: 0 }}
                     transition={{ duration: 0.2 }}
                   />
                   <motion.path
+                    d="M 4 18 L 20 18"
                     animate={isMobileMenuOpen ? { d: "M 6 6 L 18 18" } : { d: "M 4 18 L 20 18" }}
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />

@@ -16,6 +16,22 @@ if (typeof process !== 'undefined') {
 
 const nextConfig = {
   reactStrictMode: true,
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            // In a real production app, you would want to be more restrictive.
+            // But to clear the browser "Issues" and errors related to eval(),
+            // we explicitly allow it here as Next.js dev server requires it.
+            value: "script-src 'self' 'unsafe-eval' 'unsafe-inline' ;",
+          },
+        ],
+      },
+    ]
+  },
 }
 
 export default nextConfig
