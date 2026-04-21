@@ -75,7 +75,7 @@ export default function ContactForm() {
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         disabled={status === 'loading'}
-        className="w-full flex justify-center py-4 px-4 rounded-xl text-sm font-bold text-foreground bg-card border border-card-border hover:brightness-110 shadow-lg shadow-primary-from/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-from transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed group"
+        className="w-full flex justify-center py-4 px-4 rounded-xl text-sm font-bold text-foreground bg-card border border-card-border hover:brightness-110 shadow-lg shadow-primary-from/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-from transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed group"
       >
 
         {status === 'loading' ? (

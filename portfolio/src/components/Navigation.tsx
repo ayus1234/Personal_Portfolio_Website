@@ -85,36 +85,40 @@ export default function Navigation() {
             <div className="hidden md:flex items-center space-x-6 mr-4">
               <motion.a
                 href="#"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="px-3 py-2 text-muted hover:text-foreground transition-all duration-300 font-medium text-base relative group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="px-3 py-2 text-muted hover:text-foreground transition-colors duration-200 font-medium text-base relative group"
               >
                 Home
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-from to-primary-to transition-all duration-300 group-hover:w-full"></span>
               </motion.a>
               <motion.a
                 href="#about"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="px-3 py-2 text-muted hover:text-foreground transition-all duration-300 font-medium text-base relative group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="px-3 py-2 text-muted hover:text-foreground transition-colors duration-200 font-medium text-base relative group"
               >
                 About
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-from to-primary-to transition-all duration-300 group-hover:w-full"></span>
               </motion.a>
               <motion.a
                 href="#projects"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="px-3 py-2 text-muted hover:text-foreground transition-all duration-300 font-medium text-base relative group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="px-3 py-2 text-muted hover:text-foreground transition-colors duration-200 font-medium text-base relative group"
               >
                 Work
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-from to-primary-to transition-all duration-300 group-hover:w-full"></span>
               </motion.a>
               <motion.a
                 href="#contact"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="px-3 py-2 text-muted hover:text-foreground transition-all duration-300 font-medium text-base relative group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="px-3 py-2 text-muted hover:text-foreground transition-colors duration-200 font-medium text-base relative group"
               >
                 Contact
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-from to-primary-to transition-all duration-300 group-hover:w-full"></span>
@@ -123,13 +127,16 @@ export default function Navigation() {
 
             {/* Theme Toggle */}
             {mounted && (
-              <button
+              <motion.button
                 onClick={() => {
                   if (theme === 'light') setTheme('dark')
                   else if (theme === 'dark') setTheme('vibe')
                   else setTheme('light')
                 }}
-                className="w-10 h-10 rounded-full bg-subtle-bg flex items-center justify-center text-foreground hover:scale-110 transition-transform shadow-md border border-card-border"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="w-10 h-10 rounded-full bg-subtle-bg flex items-center justify-center text-foreground shadow-md border border-card-border"
                 aria-label="Toggle Theme"
               >
                 {theme === 'light' ? (
@@ -147,7 +154,7 @@ export default function Navigation() {
                     <path d="M12 21.5C7.305 21.5 3.5 17.695 3.5 13C3.5 9 10.5 2.5 12 2.5C13.5 2.5 20.5 9 20.5 13C20.5 17.695 16.695 21.5 12 21.5Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 )}
-              </button>
+              </motion.button>
             )}
 
             {/* Download Resume (Visible always except small phones, optionally hide/show differently) */}
