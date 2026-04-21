@@ -1,55 +1,50 @@
-'use client'
+﻿"use client";
 
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 
 interface ProjectCardProps {
   title: string;
   description: string;
+
   technologies: string[];
   liveUrl?: string;
   githubUrl?: string;
-  imageUrl?: string;
-  colorClass?: string;
 }
 
 export default function ProjectCard({
   title,
   description,
+
   technologies,
   liveUrl,
   githubUrl,
-  imageUrl,
-  colorClass,
 }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.5, type: 'tween' }}
       viewport={{ once: true }}
-      whileHover={{
-        y: -8,
-        scale: 1.01,
-      }}
-      className="group rounded-[2rem] overflow-hidden shadow-xl border border-card-border/50 flex flex-col h-full bg-card transition-all duration-300 hover:border-primary-from/30 dark:hover:border-primary-from/30"
+      whileHover={{ y: -5 }}
+      className="group rounded-2xl overflow-hidden shadow-2xl border border-slate-800 flex flex-col h-full bg-slate-900"
     >
       {/* Top Section: GitHub Style Header */}
-      <div className="bg-subtle-bg p-6 relative">
+      <div className="bg-white p-6 relative">
         <div className="flex justify-between items-start mb-4">
           <div className="flex-1">
-            <p className="text-muted text-sm font-medium mb-1">ayus1234 /</p>
-            <h4 className="text-foreground text-sm font-bold leading-tight break-words">
+            <p className="text-slate-600 text-sm font-medium mb-1">ayus1234 /</p>
+            <h4 className="text-slate-900 text-sm font-bold leading-tight break-words">
               {title.replace(/\s+/g, '_\u200B').replace(/-/g, '\u2011')}
             </h4>
           </div>
         </div>
 
-        <p className="text-muted text-xs mb-6 line-clamp-2">
+        <p className="text-slate-500 text-xs mb-6 line-clamp-2">
           This project implements a {description.toLowerCase()}
         </p>
 
-        <div className="flex items-center gap-4 text-muted text-[10px] font-medium">
+        <div className="flex items-center gap-4 text-slate-400 text-[10px] font-medium">
           <div className="flex items-center gap-1">
             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" /></svg>
             <span>1 Contributor</span>
@@ -68,38 +63,38 @@ export default function ProjectCard({
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full h-1 bg-primary-from"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></div>
       </div>
 
       {/* Bottom Section: Project Details */}
-      <div className="flex-1 flex flex-col p-6 relative bg-card z-10">
-        <h3 className="text-xl font-bold mb-3 text-foreground">
+      <div className="flex-1 flex flex-col p-6 bg-slate-900">
+        <h3 className="text-xl font-bold mb-3 text-purple-400 group-hover:text-purple-300 transition-colors">
           {title}
         </h3>
-        <p className="text-muted text-sm mb-6 flex-1 leading-relaxed">
+        <p className="text-slate-300 text-sm mb-6 flex-1 leading-relaxed">
           {description}
         </p>
 
         <div className="flex flex-wrap gap-2 mb-6">
-          {technologies && technologies.map((tech) => (
+          {technologies.map((tech) => (
             <span
               key={tech}
-              className="px-4 py-1.5 bg-subtle-bg text-muted rounded-full text-xs font-medium border border-card-border"
+              className="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-[10px] font-medium border border-slate-700"
             >
               {tech}
             </span>
           ))}
         </div>
 
-        <div className="flex gap-6 pt-4 border-t border-card-border/50">
+        <div className="flex gap-6 pt-4 border-t border-slate-800">
           {githubUrl && (
             <a
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted hover:text-foreground text-sm font-medium transition-colors flex items-center gap-2"
+              className="text-slate-400 hover:text-white text-sm font-medium transition-colors flex items-center gap-2"
             >
-              GitHub →
+              GitHub ΓåÆ
             </a>
           )}
           {liveUrl && (
@@ -107,13 +102,13 @@ export default function ProjectCard({
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary-from hover:text-primary-to text-sm font-medium transition-colors flex items-center gap-2"
+              className="text-purple-400 hover:text-purple-300 text-sm font-medium transition-colors flex items-center gap-2"
             >
-              Live Demo →
+              Live Demo ΓåÆ
             </a>
           )}
         </div>
       </div>
-    </motion.div >
+    </motion.div>
   );
-}
+} 
