@@ -40,7 +40,7 @@ export default function Navigation() {
       opacity: 0,
       clipPath: 'inset(0 0 100% 0)',
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 400,
         damping: 40,
         when: 'afterChildren' as const,
@@ -52,7 +52,7 @@ export default function Navigation() {
       opacity: 1,
       clipPath: 'inset(0 0 0% 0)',
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 300,
         damping: 30,
         when: 'beforeChildren' as const,
@@ -69,7 +69,7 @@ export default function Navigation() {
       y: 0,
       filter: 'blur(0px)',
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 300,
         damping: 25
       }
@@ -112,7 +112,7 @@ export default function Navigation() {
                   href="#"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  transition={{ type: "spring" as const, stiffness: 400, damping: 17 }}
                   className="px-3 py-2 text-muted hover:text-foreground transition-colors duration-200 font-medium text-base relative group"
                 >
                   Home
@@ -122,7 +122,7 @@ export default function Navigation() {
                   href="#about"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  transition={{ type: "spring" as const, stiffness: 400, damping: 17 }}
                   className="px-3 py-2 text-muted hover:text-foreground transition-colors duration-200 font-medium text-base relative group"
                 >
                   About
@@ -132,7 +132,7 @@ export default function Navigation() {
                   href="#projects"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  transition={{ type: "spring" as const, stiffness: 400, damping: 17 }}
                   className="px-3 py-2 text-muted hover:text-foreground transition-colors duration-200 font-medium text-base relative group"
                 >
                   Work
@@ -142,7 +142,7 @@ export default function Navigation() {
                   href="#contact"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  transition={{ type: "spring" as const, stiffness: 400, damping: 17 }}
                   className="px-3 py-2 text-muted hover:text-foreground transition-colors duration-200 font-medium text-base relative group"
                 >
                   Contact
@@ -160,7 +160,7 @@ export default function Navigation() {
                   }}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  transition={{ type: "spring" as const, stiffness: 400, damping: 17 }}
                   className="w-10 h-10 rounded-full bg-subtle-bg flex items-center justify-center text-foreground shadow-md border border-card-border"
                   aria-label="Toggle Theme"
                 >
@@ -200,7 +200,7 @@ export default function Navigation() {
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                transition={{ type: "spring" as const, stiffness: 400, damping: 17 }}
                 aria-label="Toggle mobile menu"
                 aria-expanded={isMobileMenuOpen}
               >
@@ -208,7 +208,7 @@ export default function Navigation() {
                   <motion.path
                     d="M 4 6 L 20 6"
                     animate={isMobileMenuOpen ? { d: "M 18 6 L 6 18" } : { d: "M 4 6 L 20 6" }}
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    transition={{ type: "spring" as const, stiffness: 300, damping: 30 }}
                   />
                   <motion.path
                     d="M 4 12 L 20 12"
@@ -218,7 +218,7 @@ export default function Navigation() {
                   <motion.path
                     d="M 4 18 L 20 18"
                     animate={isMobileMenuOpen ? { d: "M 6 6 L 18 18" } : { d: "M 4 18 L 20 18" }}
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    transition={{ type: "spring" as const, stiffness: 300, damping: 30 }}
                   />
                 </svg>
               </motion.button>
