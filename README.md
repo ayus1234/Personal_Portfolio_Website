@@ -1,28 +1,24 @@
 # Ayush Nathani - Personal Portfolio
 
-A modern, high-performance, and visually stunning portfolio website built with [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com). This project features a sophisticated multi-theme system and premium UI components designed for an elite developer experience.
+A modern, high-performance portfolio website built with [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com). This project showcases my skills, projects, and professional background with a premium, dark-themed aesthetic.
 
 ## 🚀 Features
 
-- **Multi-Theme System**: Seamlessly switch between three distinct, professionally curated themes:
-  - **Dark**: A sleek, premium developer aesthetic with deep purples and pinks.
-  - **Vibe (Ocean)**: A calming, vibrant teal and navy blue aesthetic.
-  - **Light**: A high-contrast, clean, and modern off-white theme with ultra-soft shadows.
-- **Dynamic Theme Switcher**: An interactive navigation component with custom-designed stylish icons and glow effects.
-- **Responsive & Clean UI**: Perfectly balanced layouts with a focus on typography and geometric precision.
-- **Premium Animations**: Smooth, performant interactions using [Framer Motion](https://www.framer.com/motion/), including magnetic elements and typewriter effects.
-- **Project Showcase**: GitHub-style repository cards with dynamic technology tags and GitHub integration.
-- **Dynamic Scroll Progress**: A color-adaptive progress indicator at the top of the viewport.
-- **Optimized Contact Form**: A fully functional contact form with solid theme-aware backgrounds and clear validation.
+- **Modern Tech Stack**: Built with Next.js 15+ (App Router), React 19, and TypeScript.
+- **Responsive Design**: Fully responsive layout that looks great on all devices.
+- **Dark Mode Aesthetic**: A sleek, professional dark theme with carefully selected color palettes.
+- **Animations**: Smooth transitions and interactions using [Framer Motion](https://www.framer.com/motion/).
+- **Project Showcase**: specific cards to display projects like "E-DALL-E" with GitHub-style headers.
+- **Contact Form**: Integrated contact form with validation and loading states.
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (CSS Variable-based Theme System)
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Heroicons](https://heroicons.com/) & Custom High-End SVGs
-- **Theming**: [next-themes](https://github.com/pacocoursey/next-themes)
+- **Icons**: [Heroicons](https://heroicons.com/)
+- **Deployment**: [Vercel](https://vercel.com)
 
 ## 🏁 Getting Started
 
@@ -30,24 +26,24 @@ First, install the dependencies:
 
 ```bash
 npm install
+# or
+yarn install
 ```
 
 Runs locally at:
 
 ```bash
 npm run dev
+# or
+yarn dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## 📦 Deployment
 
 This project is optimized for deployment on [Vercel](https://vercel.com/).
 
-1. Push your code to a GitHub repository.
-2. Import the project into Vercel.
-3. Vercel will automatically detect the Next.js configuration and deploy.
-
-## 📄 License
-
-This project is for personal use and showcase.
+1.  Push your code to a GitHub repository.
+2.  Import the project into Vercel.
+3.  Vercel will automatically detect the Next.js configuration and deploy.

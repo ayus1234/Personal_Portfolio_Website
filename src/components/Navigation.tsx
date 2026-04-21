@@ -1,12 +1,13 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useTheme } from 'next-themes'
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { theme, setTheme } = useTheme()
 
   useEffect(() => {
@@ -19,11 +20,56 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Close mobile menu when screen resizes to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMobileMenuOpen(false)
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  const handleMobileLinkClick = () => {
+    setIsMobileMenuOpen(false)
+  }
+
+  const mobileMenuVariants = {
+    hidden: {
+      opacity: 0,
+      height: 0,
+      transition: {
+        duration: 0.3,
+        ease: 'easeInOut' as const,
+        when: 'afterChildren' as const,
+        staggerChildren: 0.05,
+        staggerDirection: -1,
+      },
+    },
+    visible: {
+      opacity: 1,
+      height: 'auto',
+      transition: {
+        duration: 0.3,
+        ease: 'easeInOut' as const,
+        when: 'beforeChildren' as const,
+        staggerChildren: 0.07,
+        delayChildren: 0.1,
+      },
+    },
+  }
+
+  const mobileLinkVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.3 } },
+  }
+
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl border-b border-card-border shadow-2xl' : 'bg-transparent'
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled || isMobileMenuOpen ? 'bg-background/80 backdrop-blur-xl border-b border-card-border shadow-2xl' : 'bg-transparent'
         }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,14 +163,81 @@ export default function Navigation() {
             </motion.a>
 
             {/* Mobile menu button */}
-            <button className="md:hidden text-muted hover:text-foreground p-2">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <button
+              className="md:hidden text-muted hover:text-foreground p-2 relative z-50"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle mobile menu"
+              aria-expanded={isMobileMenuOpen}
+            >
+              <svg className="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {isMobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
               </svg>
             </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            variants={mobileMenuVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            className="md:hidden overflow-hidden bg-background/95 backdrop-blur-xl border-b border-card-border"
+          >
+            <div className="container mx-auto px-4 py-4 flex flex-col space-y-1">
+              <motion.a
+                variants={mobileLinkVariants}
+                href="#"
+                onClick={handleMobileLinkClick}
+                className="px-4 py-3 text-muted hover:text-foreground hover:bg-subtle-bg rounded-xl transition-all duration-300 font-medium text-lg"
+              >
+                Home
+              </motion.a>
+              <motion.a
+                variants={mobileLinkVariants}
+                href="#about"
+                onClick={handleMobileLinkClick}
+                className="px-4 py-3 text-muted hover:text-foreground hover:bg-subtle-bg rounded-xl transition-all duration-300 font-medium text-lg"
+              >
+                About
+              </motion.a>
+              <motion.a
+                variants={mobileLinkVariants}
+                href="#projects"
+                onClick={handleMobileLinkClick}
+                className="px-4 py-3 text-muted hover:text-foreground hover:bg-subtle-bg rounded-xl transition-all duration-300 font-medium text-lg"
+              >
+                Work
+              </motion.a>
+              <motion.a
+                variants={mobileLinkVariants}
+                href="#contact"
+                onClick={handleMobileLinkClick}
+                className="px-4 py-3 text-muted hover:text-foreground hover:bg-subtle-bg rounded-xl transition-all duration-300 font-medium text-lg"
+              >
+                Contact
+              </motion.a>
+              <motion.a
+                variants={mobileLinkVariants}
+                href="/AYUSH_NATHANI_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleMobileLinkClick}
+                className="mx-4 mt-2 px-6 py-3 text-center font-semibold text-white bg-gradient-to-r from-primary-from to-primary-to rounded-full shadow-lg shadow-primary-from/30 transition-all duration-300 text-lg"
+              >
+                Download Resume
+              </motion.a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   )
 }
