@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from '@/components/ThemeProvider';
+import ConsoleSuppressor from '@/components/ConsoleSuppressor';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
           themes={['light', 'dark', 'vibe']}
           enableSystem={false}
         >
+          <ConsoleSuppressor />
           {children}
         </ThemeProvider>
       </body>
