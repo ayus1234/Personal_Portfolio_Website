@@ -19,13 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.className} bg-background text-foreground transition-colors duration-300`} suppressHydrationWarning>
+        <ConsoleSuppressor />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           themes={['light', 'dark', 'vibe']}
           enableSystem={false}
         >
-          <ConsoleSuppressor />
           {children}
         </ThemeProvider>
       </body>

@@ -16,11 +16,35 @@ const SUPPRESSED_WORDS = [
 
 export default function ConsoleSuppressor() {
   useEffect(() => {
-    // Helper to check if any part of the error matches our suppression list
     const shouldSuppress = (data: any): boolean => {
       if (!data) return false
-      const str = typeof data === 'string' ? data : JSON.stringify(data)
-      return SUPPRESSED_WORDS.some(word => str.toLowerCase().includes(word.toLowerCase()))
+      
+      const checkString = (s: string) => 
+        SUPPRESSED_WORDS.some(word => s.toLowerCase().includes(word.toLowerCase()))
+
+      // Direct string check
+      if (typeof data === 'string') return checkString(data);
+
+      // Error object or similar
+      try {
+        if (data.message && typeof data.message === 'string' && checkString(data.message)) return true;
+        if (data.stack && typeof data.stack === 'string' && checkString(data.stack)) return true;
+        if (data.reason && typeof data.reason === 'string' && checkString(data.reason)) return true;
+        
+        // Deep search through object properties (non-recursive for safety)
+        const strified = JSON.stringify(data);
+        if (strified && checkString(strified)) return true;
+      } catch (e) {
+        // Circular reference or other stringify error
+        try {
+          // Last ditch effort: check common keys
+          for (const key in data) {
+            if (typeof data[key] === 'string' && checkString(data[key])) return true;
+          }
+        } catch (e2) {}
+      }
+      
+      return false
     }
 
     const originalError = console.error.bind(console)
