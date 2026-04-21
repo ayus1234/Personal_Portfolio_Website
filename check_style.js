@@ -1,4 +1,15 @@
+// Suppress url.parse() deprecation warning
+if (typeof process !== 'undefined') {
+    const originalEmitWarning = process.emitWarning;
+    process.emitWarning = (warning, ...args) => {
+        if (typeof warning === 'string' && warning.includes('url.parse')) return;
+        if (typeof warning === 'object' && warning.message && warning.message.includes('url.parse')) return;
+        originalEmitWarning.call(process, warning, ...args);
+    };
+}
+
 const puppeteer = require('puppeteer');
+
 
 (async () => {
     const browser = await puppeteer.launch();
