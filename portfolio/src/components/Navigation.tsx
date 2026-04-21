@@ -40,10 +40,10 @@ export default function Navigation() {
       opacity: 0,
       height: 0,
       transition: {
-        duration: 0.3,
+        duration: 0.2,
         ease: 'easeInOut' as const,
         when: 'afterChildren' as const,
-        staggerChildren: 0.05,
+        staggerChildren: 0.03,
         staggerDirection: -1,
       },
     },
@@ -51,18 +51,18 @@ export default function Navigation() {
       opacity: 1,
       height: 'auto',
       transition: {
-        duration: 0.3,
-        ease: 'easeInOut' as const,
+        duration: 0.2,
+        ease: 'easeOut' as const,
         when: 'beforeChildren' as const,
-        staggerChildren: 0.07,
-        delayChildren: 0.1,
+        staggerChildren: 0.04,
+        delayChildren: 0.02,
       },
     },
   }
 
   const mobileLinkVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.3 } },
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: 'easeOut' as const } },
   }
 
   return (
@@ -170,9 +170,12 @@ export default function Navigation() {
             </motion.a>
 
             {/* Mobile menu button */}
-            <button
-              className="md:hidden text-muted hover:text-foreground p-2 relative z-50"
+            <motion.button
+              className="md:hidden text-muted hover:text-foreground p-2 relative z-50 focus:outline-none touch-none"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
               aria-label="Toggle mobile menu"
               aria-expanded={isMobileMenuOpen}
             >
@@ -183,7 +186,7 @@ export default function Navigation() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 )}
               </svg>
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>
