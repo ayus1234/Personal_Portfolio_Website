@@ -44,3 +44,12 @@ next-env.d.ts
 # ignore yarn lock file (project uses npm)
 yarn.lock
 
+
+/src/generated/prisma
+
+# local database
+*.db
+*.db-journal
+
+# test scripts
+test_resend.js

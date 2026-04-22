@@ -17,6 +17,8 @@ A modern, high-performance portfolio website built with the latest web technolog
 - **Responsive & Liquid Layout**: Optimized for every screen size, from mobile devices to ultra-wide displays.
 - **Clean Console Technology**: Custom console noise suppression to filter out browser extension warnings for a distraction-free development experience.
 - **Interactive Elements**: Real-time typewriter effects, scroll-native navigation, and high-performance image optimization.
+- **Automated Inquiry System**: Fully integrated contact form using **Resend** for instant email notifications and **@libsql/client** for cloud-ready data persistence.
+- **Secure Admin Dashboard**: A private repository of all messages with magnetic UI actions (Reply/Delete) and secure password protection.
 
 ## 🛠️ Performance Tech Stack
 
@@ -60,10 +62,15 @@ I am a Computer Science student currently pursuing my **MCA at IIT Patna & IIIT 
 - npm or yarn
 
 ### Installation
-```bash
-npm install
-# or
-yarn install
+1. Clone the repository
+2. Run `npm install`
+3. Create a `.env` file in the root and add the following variables:
+
+```env
+TURSO_DATABASE_URL=file:portfolio.db
+ADMIN_PASSWORD=your_secure_password
+NOTIFICATION_EMAIL=your_email@example.com
+RESEND_API_KEY=re_your_api_key
 ```
 
 ### Development

@@ -11,16 +11,45 @@ export default function ContactForm() {
   })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
+  const [errorMessage, setErrorMessage] = useState('')
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('loading')
+    setErrorMessage('')
 
-    // Simulate API call
-    setTimeout(() => {
-      setStatus('success')
-      setFormData({ name: '', email: '', message: '' })
-      setTimeout(() => setStatus('idle'), 3000)
-    }, 1500)
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setStatus('success')
+        setFormData({ name: '', email: '', message: '' })
+        setTimeout(() => setStatus('idle'), 5000)
+      } else {
+        setStatus('error')
+        setErrorMessage(data.error || 'Something went wrong. Please try again.')
+        setTimeout(() => {
+          setStatus('idle')
+          setErrorMessage('')
+        }, 5000)
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      setStatus('error')
+      setErrorMessage('Could not connect to the server. Please try again later.')
+      setTimeout(() => {
+        setStatus('idle')
+        setErrorMessage('')
+      }, 5000)
+    }
   }
 
   return (
@@ -95,6 +124,16 @@ export default function ContactForm() {
           className="text-emerald-400 text-sm text-center font-medium mt-4 bg-emerald-400/10 py-2 rounded-lg border border-emerald-400/20"
         >
           Message sent successfully!
+        </motion.p>
+      )}
+
+      {status === 'error' && (
+        <motion.p
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-rose-400 text-sm text-center font-medium mt-4 bg-rose-400/10 py-2 rounded-lg border border-rose-400/20"
+        >
+          {errorMessage}
         </motion.p>
       )}
     </form>
