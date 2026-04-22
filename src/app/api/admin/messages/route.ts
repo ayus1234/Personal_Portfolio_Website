@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
-import db from '@/lib/db';
+import db, { ensureMessagesTable } from '@/lib/db';
+
+export const dynamic = 'force-dynamic';
 
 // Verify the admin password from headers
 const verifyAdmin = (req: Request) => {
@@ -13,6 +15,7 @@ export async function GET(req: Request) {
   }
 
   try {
+    await ensureMessagesTable();
     const result = await db.execute('SELECT * FROM messages ORDER BY createdAt DESC');
     return NextResponse.json(result.rows);
   } catch (error) {
@@ -27,6 +30,7 @@ export async function DELETE(req: Request) {
   }
 
   try {
+    await ensureMessagesTable();
     const { searchParams } = new URL(req.url);
     const id = searchParams.get('id');
 

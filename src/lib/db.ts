@@ -10,10 +10,8 @@ const db = createClient({
   authToken: authToken,
 });
 
-// Create the messages table if it doesn't exist
-// Note: In @libsql/client, we use execute() for queries.
-// We wrap this in an async init function or just execute it if it's the top level (Next.js handles this during build/runtime)
-const initDb = async () => {
+// Note: We'll ensure table creation happens during the first request to avoid build-time issues
+export const ensureMessagesTable = async () => {
   try {
     await db.execute(`
       CREATE TABLE IF NOT EXISTS messages (
@@ -28,7 +26,5 @@ const initDb = async () => {
     console.error('Database initialization error:', error);
   }
 };
-
-initDb();
 
 export default db;

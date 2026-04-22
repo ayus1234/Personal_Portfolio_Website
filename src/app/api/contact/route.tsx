@@ -1,12 +1,15 @@
 import { NextResponse } from 'next/server';
-import db from '@/lib/db';
+import db, { ensureMessagesTable } from '@/lib/db';
 import { Resend } from 'resend';
 import { EmailTemplate } from '@/components/EmailTemplate';
+
+export const dynamic = 'force-dynamic';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
+    await ensureMessagesTable();
     const body = await req.json();
     const { name, email, message } = body;
 
