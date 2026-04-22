@@ -32,17 +32,17 @@ A modern, high-performance portfolio website built with the latest web technolog
 
 ## 📁 Featured Projects
 
-### 1. EcoShift – Carbon Footprint Tracker
+### [1. EcoShift – Carbon Footprint Tracker](https://github.com/ayus1234/EcoShift---A-Carbon-Footprint-Tracker-App/)
 *A web-based application designed to help individuals track sustainable habits and measure real-time CO2 savings.*
 - **Tech Stack**: Node.js, Express.js, SQLite, Chart.js, Bootstrap, REST API.
 - **Key Features**: Habit logging, profile management, interactive CO2 analytics, and CSV/PDF export.
 
-### 2. EV Vehicle Prediction and Forecasting
+### [2. EV Vehicle Prediction and Forecasting](https://github.com/ayus1234/EV_Vehicle_Prediction)
 *A machine learning pipeline forecasting electric vehicle (EV) adoption trends.*
 - **Tech Stack**: Python, Random Forest, Streamlit, Pandas, NumPy, Scikit-learn.
 - **Key Features**: Predictive modeling for market trends and an interactive forecasting dashboard.
 
-### 3. E-DALL-E: Image Generation System
+### [3. E-DALL-E: Image Generation System](https://github.com/ayus1234/E-DALL-E-Image-Generation-and-Expansion-System)
 *Combines DALL-E Mini with VQGAN+CLIP for advanced image generation and expansion.*
 - **Tech Stack**: Python, DALL-E Mini, VQGAN+CLIP, PyTorch, Deep Learning.
 - **Key Features**: Text-to-image synthesis with novel aspect-ratio expansion techniques.
@@ -52,8 +52,8 @@ A modern, high-performance portfolio website built with the latest web technolog
 I am a Computer Science student currently pursuing my **MCA at IIT Patna & IIIT Ranchi**. I am passionate about building innovative solutions at the intersection of web development and intelligence.
 
 ### 📜 Certifications
-- **Microsoft Azure AI Essentials**: Workloads and Machine Learning on Azure.
-- **Gemini for Google Workspace**: Leveraging generative AI for productivity.
+- **[Microsoft Azure AI Essentials](https://www.linkedin.com/learning/certificates/0e1255d6fd94595e6bb5b00fd22ec8b8e1665d920371672c5394b546c613e000?trk=share_certificate)**: Workloads and Machine Learning on Azure.
+- **[Gemini for Google Workspace](https://drive.google.com/file/d/1HUTpGLIfTLFSSbMnlv1hV-VWTjrUumG9/view?usp=sharing)**: Leveraging generative AI for productivity.
 
 ## 🏁 Getting Started
 
