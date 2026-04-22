@@ -67,9 +67,15 @@ I am a Computer Science student currently pursuing my **MCA at IIT Patna & IIIT 
 3. Create a `.env` file in the root and add the following variables:
 
 ```env
-TURSO_DATABASE_URL=file:portfolio.db
+# Cloud SQLite (Turso)
+TURSO_DATABASE_URL=libsql://your-db-url.turso.io
+TURSO_AUTH_TOKEN=your_auth_token_here
+
+# Admin Dashboard
 ADMIN_PASSWORD=your_secure_password
-NOTIFICATION_EMAIL=your_email@example.com
+
+# Email (Resend)
+NOTIFICATION_EMAIL=your_email@gmail.com
 RESEND_API_KEY=re_your_api_key
 ```
 
@@ -80,7 +86,14 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) to view the application in development mode.
 
 ## 📦 Deployment
-Optimized for deployment on **Vercel**. Simply connect your GitHub repository and it will deploy automatically.
+
+Optimized for deployment on **Vercel**. 
+
+### Important Steps for Production:
+1. **Database**: Create a free account at [Turso](https://turso.tech) and create a new database.
+2. **Environment Variables**: Add the 5 keys mentioned in the `.env` section to your Vercel Project Settings.
+3. **Build**: Ensure you have `@react-email/render` installed (already included in `package.json`).
+4. **Deploy**: Simply push your code to GitHub and Vercel will handle the rest.
 
 ---
 Built with 💙 by [Ayush Nathani](https://github.com/ayus1234)
