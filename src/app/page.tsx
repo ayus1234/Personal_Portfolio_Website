@@ -163,7 +163,7 @@ export default function Home(): React.ReactNode {
               >
                 <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-[350px] lg:h-[350px] rounded-full overflow-hidden border-[4px] border-card-border shadow-[0_0_40px_rgba(var(--highlight),0.15)] z-10 bg-card flex items-center justify-center">
                   <Image
-                    src="/profile-placeholder.png"
+                    src="/profile.png"
                     alt="Ayush Nathani"
                     fill
                     className="object-cover"
