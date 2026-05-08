@@ -43,9 +43,9 @@ export default function Typewriter({
     }, [subIndex, index, isDeleting, words, typingSpeed, deletingSpeed, delayBetweenWords]);
 
     return (
-        <span className="text-purple-400 ml-2">
+        <span className="text-primary-from ml-2">
             {`${words[index].substring(0, subIndex)}`}
-            <span className="inline-block w-[2px] h-8 bg-purple-400 animate-pulse ml-[2px] align-middle mb-1"></span>
+            <span className="inline-block w-[2px] h-8 bg-primary-from animate-pulse ml-[2px] align-middle mb-1"></span>
         </span>
     )
 }
