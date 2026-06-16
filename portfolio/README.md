@@ -11,33 +11,30 @@ A modern, high-performance portfolio website built with the latest web technolog
 ### 1. Dynamic Hero Interface
 <div align="center">
   <img src="public/portfolio-1.png" alt="Hero Section" width="100%">
-  <br>
-  <em>The landing page features a modern, motion-rich hero section with dynamic typography, introducing the core expertise in AI and Full-Stack Engineering.</em>
 </div>
-<br>
+
+*The landing page features a modern, motion-rich hero section with dynamic typography, introducing the core expertise in AI and Full-Stack Engineering.*
 
 ### 2. Professional Profile & Tech Stack
 <div align="center">
   <img src="public/portfolio-2.png" alt="About and Skills" width="100%">
-  <br>
-  <em>A comprehensive overview of my professional background, paired with a visual grid highlighting proficiency in modern tools like Next.js, Python, and MongoDB Vector Search.</em>
 </div>
-<br>
+
+*A comprehensive overview of my professional background, paired with a visual grid highlighting proficiency in modern tools like Next.js, Python, and MongoDB Vector Search.*
 
 ### 3. Featured AI Projects
 <div align="center">
   <img src="public/portfolio-3.png" alt="Projects Section" width="100%">
-  <br>
-  <em>A dedicated showcase of production-grade AI applications, complete with high-quality mockups, tech stack details, and links to live repositories.</em>
 </div>
-<br>
+
+*A dedicated showcase of production-grade AI applications, complete with high-quality mockups, tech stack details, and links to live repositories.*
 
 ### 4. Interactive Contact Form
 <div align="center">
   <img src="public/portfolio-4.png" alt="Contact Section" width="100%">
-  <br>
-  <em>A sleek, responsive contact section integrated with a database for reliable, real-time message delivery and seamless user communication.</em>
 </div>
+
+*A sleek, responsive contact section integrated with a database for reliable, real-time message delivery and seamless user communication.*
 
 ## 🚀 Key Features
 
