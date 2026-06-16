@@ -10,28 +10,28 @@ import Typewriter from '@/components/Typewriter'
 
 const projects = [
   {
-    title: 'EcoShift – A Carbon Footprint Tracker App',
-    description: 'A web-based application designed to help individuals track sustainable habits and measure real-time CO2 savings. Features include habit logging, profile management, date-range filtering, and CSV/PDF export.',
-    imageUrl: '/project3.jpg',
-    technologies: ['Node.js', 'Express.js', 'SQLite', 'Chart.js', 'Bootstrap', 'REST API'],
-    githubUrl: 'https://github.com/ayus1234/EcoShift---A-Carbon-Footprint-Tracker-App',
+    title: 'TurfGrid AI – Smart City Command Center',
+    description: 'An autonomous agent swarm that protects cities and businesses from the logistical chaos of global sporting surges. Built with multi-agent orchestration, high-availability Gemini-to-Groq failover, and MongoDB Vector Search.',
+    imageUrl: '/turfgrid.png',
+    technologies: ['Next.js', 'MongoDB', 'FastAPI', 'Python', 'Gemini AI', 'Groq'],
+    githubUrl: 'https://github.com/ayus1234/turfgrid-ai',
     colorClass: 'from-blue-500 to-indigo-500',
   },
   {
-    title: 'EV Vehicle Prediction and Forecasting',
-    description: 'A complete machine learning pipeline that forecasts electric vehicle (EV) adoption trends by analyzing historical data. Built with a Random Forest Regressor and an interactive Streamlit dashboard.',
-    imageUrl: '/project2.jpeg',
-    technologies: ['Python', 'Random Forest', 'Streamlit', 'Pandas', 'NumPy', 'Scikit-learn'],
-    githubUrl: 'https://github.com/ayus1234/EV_Vehicle_Prediction',
-    colorClass: 'from-emerald-400 to-teal-500',
+    title: 'ReelForge AI – Autonomous Creative Studio',
+    description: 'A complete 6-agent AI pipeline that automatically writes viral scripts, directs cinematic scenes, generates visual storyboards, animates video clips, mixes audio, and exports production-ready MP4s.',
+    imageUrl: '/reelforge.png',
+    technologies: ['Next.js', 'TypeScript', 'Runway API', 'ElevenLabs', 'FFmpeg', 'React'],
+    githubUrl: 'https://github.com/ayus1234/reelforge-ai',
+    colorClass: 'from-purple-500 to-pink-500',
   },
   {
-    title: 'E-DALL-E: Image Generation and Expansion System',
-    description: 'Combines DALL-E Mini for text-to-image generation with a novel expansion technique (E-DALL-E) using VQGAN+CLIP to create images with various aspect ratios and cinematic appeal.',
-    imageUrl: '/project1.jpeg',
-    technologies: ['Python', 'DALL-E Mini', 'VQGAN+CLIP', 'PyTorch', 'Deep Learning'],
-    githubUrl: 'https://github.com/ayus1234/E-DALL-E-Image-Generation-and-Expansion-System',
-    colorClass: 'from-orange-400 to-rose-500',
+    title: 'Email Triage AI – Command Center',
+    description: 'A production-grade multi-agent AI system optimized for live email triage, classifying, reasoning, replying, and routing emails with transparent chain-of-thought and privacy masking.',
+    imageUrl: '/email-triage.png',
+    technologies: ['Python', 'FastAPI', 'Groq', 'Llama-3.1', 'OpenEnv', 'Docker'],
+    githubUrl: 'https://github.com/ayus1234/ai-email-triage-agent-openenv',
+    colorClass: 'from-emerald-400 to-teal-500',
   },
 ]
 
@@ -112,7 +112,7 @@ export default function Home(): React.ReactNode {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 flex items-center text-foreground/90"
                 >
-                  I&apos;m a <Typewriter words={["Developer", "Problem Solver", "Tech Enthusiast"]} />
+                  I am&nbsp;<Typewriter words={["a Full-Stack Developer", "an AI Engineer", "a Software Architect"]} />
                 </motion.div>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -120,7 +120,7 @@ export default function Home(): React.ReactNode {
                   transition={{ duration: 0.6, delay: 0.5 }}
                   className="text-muted text-base sm:text-lg max-w-xl mb-8 sm:mb-10 leading-relaxed"
                 >
-                  I build interactive web experiences with a focus on motion, aesthetics, and usability.
+                  I build production-grade AI systems, multi-agent architectures, and sophisticated web applications with a focus on intelligence and scalability.
                 </motion.p>
 
                 <motion.div
@@ -203,11 +203,12 @@ export default function Home(): React.ReactNode {
                 </h3>
                 <div className="relative z-10 flex-1">
                   <p className="text-muted leading-relaxed text-sm sm:text-base mb-6 sm:mb-8">
-                    I am a Computer Science student currently pursuing my MCA at IIT Patna & IIIT Ranchi. I am passionate about programming and software development, with a strong foundation in multiple programming languages and frameworks. I enjoy creating innovative solutions to real-world problems.
+                    I am a Computer Science student currently pursuing my MCA at IIT Patna & IIIT Ranchi. I am a full-stack developer passionate about building production-grade, multi-agent AI systems, sophisticated web applications, and autonomous agents that solve complex real-world problems.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     <span className="px-3 sm:px-4 py-2 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-xl text-xs sm:text-sm font-bold tracking-wide">MCA Student</span>
-                    <span className="px-3 sm:px-4 py-2 bg-primary-from/10 text-primary-from border border-primary-from/20 rounded-xl text-xs sm:text-sm font-bold tracking-wide">Developer</span>
+                    <span className="px-3 sm:px-4 py-2 bg-primary-from/10 text-primary-from border border-primary-from/20 rounded-xl text-xs sm:text-sm font-bold tracking-wide">AI Engineer</span>
+                    <span className="px-3 sm:px-4 py-2 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-xl text-xs sm:text-sm font-bold tracking-wide">Full-Stack Dev</span>
                   </div>
                 </div>
               </motion.div>
@@ -235,14 +236,14 @@ export default function Home(): React.ReactNode {
                     className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 sm:gap-y-6 gap-x-4"
                   >
                     {[
-                      { name: 'Python (Intermediate)', icon: '🐍' },
-                      { name: 'C/C++ (Intermediate)', icon: '💻' },
-                      { name: 'Java (Basic)', icon: '☕' },
-                      { name: 'HTML & CSS (Intermediate)', icon: '🌐' },
-                      { name: 'Machine Learning', icon: '🤖' },
-                      { name: 'Deep Learning', icon: '🧠' },
-                      { name: 'OpenCV', icon: '📷' },
-                      { name: 'React.js', icon: '⚛️' }
+                      { name: 'Python & FastAPI', icon: '🐍' },
+                      { name: 'Next.js & React', icon: '⚛️' },
+                      { name: 'TypeScript', icon: '🔷' },
+                      { name: 'LLMs & AI Agents', icon: '🤖' },
+                      { name: 'MongoDB Vector Search', icon: '🍃' },
+                      { name: 'Docker & Deployment', icon: '🐳' },
+                      { name: 'Tailwind CSS', icon: '🎨' },
+                      { name: 'C/C++', icon: '💻' }
                     ].map((skill) => (
                       <motion.div
                         key={skill.name}
