@@ -6,6 +6,15 @@ A modern, high-performance portfolio website built with the latest web technolog
 [![Tech Stack](https://img.shields.io/badge/Next.js%2016-React%2019-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![Aesthetics](https://img.shields.io/badge/Tailwind%204-Framer%20Motion-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
 
+## 📸 Portfolio Gallery
+
+<div align="center">
+  <img src="public/portfolio-1.png" alt="Portfolio Screenshot 1" width="48%">
+  <img src="public/portfolio-2.png" alt="Portfolio Screenshot 2" width="48%">
+  <img src="public/portfolio-3.png" alt="Portfolio Screenshot 3" width="48%">
+  <img src="public/portfolio-4.png" alt="Portfolio Screenshot 4" width="48%">
+</div>
+
 ## 🚀 Key Features
 
 - **Standard-Setting Tech Stack**: Built with **Next.js 16 (App Router)**, **React 19**, and **Tailwind CSS 4** for cutting-edge performance and developer experience.
