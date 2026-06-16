@@ -6,16 +6,37 @@ A modern, high-performance portfolio website built with the latest web technolog
 [![Tech Stack](https://img.shields.io/badge/Next.js%2016-React%2019-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![Aesthetics](https://img.shields.io/badge/Tailwind%204-Framer%20Motion-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
 
-## 📸 Portfolio Gallery
+## 📸 Portfolio Walkthrough
 
+### 1. Dynamic Hero Interface
 <div align="center">
-  <img src="public/portfolio-1.png" alt="Portfolio Screenshot 1" width="48%">
-  &nbsp;
-  <img src="public/portfolio-2.png" alt="Portfolio Screenshot 2" width="48%">
-  <br><br>
-  <img src="public/portfolio-3.png" alt="Portfolio Screenshot 3" width="48%">
-  &nbsp;
-  <img src="public/portfolio-4.png" alt="Portfolio Screenshot 4" width="48%">
+  <img src="public/portfolio-1.png" alt="Hero Section" width="100%">
+  <br>
+  <em>The landing page features a modern, motion-rich hero section with dynamic typography, introducing the core expertise in AI and Full-Stack Engineering.</em>
+</div>
+<br>
+
+### 2. Professional Profile & Tech Stack
+<div align="center">
+  <img src="public/portfolio-2.png" alt="About and Skills" width="100%">
+  <br>
+  <em>A comprehensive overview of my professional background, paired with a visual grid highlighting proficiency in modern tools like Next.js, Python, and MongoDB Vector Search.</em>
+</div>
+<br>
+
+### 3. Featured AI Projects
+<div align="center">
+  <img src="public/portfolio-3.png" alt="Projects Section" width="100%">
+  <br>
+  <em>A dedicated showcase of production-grade AI applications, complete with high-quality mockups, tech stack details, and links to live repositories.</em>
+</div>
+<br>
+
+### 4. Interactive Contact Form
+<div align="center">
+  <img src="public/portfolio-4.png" alt="Contact Section" width="100%">
+  <br>
+  <em>A sleek, responsive contact section integrated with a database for reliable, real-time message delivery and seamless user communication.</em>
 </div>
 
 ## 🚀 Key Features
