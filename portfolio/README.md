@@ -31,16 +31,19 @@ A modern, high-performance portfolio website built with the latest web technolog
 ## 📁 Featured Projects
 
 ### [1. TurfGrid AI – Smart City Command Center](https://github.com/ayus1234/turfgrid-ai)
+![TurfGrid AI Dashboard](public/turfgrid.png)
 *An autonomous agent swarm that protects cities and businesses from the logistical chaos of global sporting surges.*
 - **Tech Stack**: Next.js, MongoDB Vector Search, FastAPI, Python, Gemini AI, Groq.
 - **Key Features**: Multi-agent orchestration, high-availability Gemini-to-Groq failover, autonomous state-altering actions, real-time API integrations, and multi-tenant operational dashboard.
 
 ### [2. ReelForge AI – Autonomous Creative Studio](https://github.com/ayus1234/reelforge-ai)
+![ReelForge AI Dashboard](public/reelforge.png)
 *A complete 6-agent AI pipeline that automatically turns ideas into export-ready short videos.*
 - **Tech Stack**: Next.js, TypeScript, Runway API, ElevenLabs, FFmpeg, React.
 - **Key Features**: Auto-writes viral scripts, directs cinematic scenes, generates storyboards, animates clips, mixes audio, and scores viral potential.
 
 ### [3. Email Triage AI – Command Center](https://github.com/ayus1234/ai-email-triage-agent-openenv)
+![Email Triage AI Dashboard](public/email-triage.png)
 *A production-grade multi-agent AI system optimized for live email triage and workflow automation.*
 - **Tech Stack**: Python, FastAPI, Groq, Llama-3.1, OpenEnv, Docker.
 - **Key Features**: Autonomous classification, empathetic dynamic replying, secure department routing with transparent chain-of-thought and privacy masking.
