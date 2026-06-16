@@ -2,7 +2,7 @@
 
 A modern, high-performance portfolio website built with the latest web technologies. This project showcases my skills, featured projects, and professional background with a premium, motion-rich aesthetic.
 
-[![Portfolio Live](https://img.shields.io/badge/Portfolio-Live%20Demo-blue?style=for-the-badge)](https://personal-portfolio-website-srxo.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/-Live%20Demo-blue?style=for-the-badge)](https://personal-portfolio-website-srxo.vercel.app/)
 [![Tech Stack](https://img.shields.io/badge/Next.js%2016-React%2019-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![Aesthetics](https://img.shields.io/badge/Tailwind%204-Framer%20Motion-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
 
