@@ -32,24 +32,24 @@ A modern, high-performance portfolio website built with the latest web technolog
 
 ## 📁 Featured Projects
 
-### [1. EcoShift – Carbon Footprint Tracker](https://github.com/ayus1234/EcoShift---A-Carbon-Footprint-Tracker-App/)
-*A web-based application designed to help individuals track sustainable habits and measure real-time CO2 savings.*
-- **Tech Stack**: Node.js, Express.js, SQLite, Chart.js, Bootstrap, REST API.
-- **Key Features**: Habit logging, profile management, interactive CO2 analytics, and CSV/PDF export.
+### [1. TurfGrid AI – Smart City Command Center](https://github.com/ayus1234/turfgrid-ai)
+*An autonomous agent swarm that protects cities and businesses from the logistical chaos of global sporting surges.*
+- **Tech Stack**: Next.js, MongoDB Vector Search, FastAPI, Python, Gemini AI, Groq.
+- **Key Features**: Multi-agent orchestration, high-availability Gemini-to-Groq failover, autonomous state-altering actions, real-time API integrations, and multi-tenant operational dashboard.
 
-### [2. EV Vehicle Prediction and Forecasting](https://github.com/ayus1234/EV_Vehicle_Prediction)
-*A machine learning pipeline forecasting electric vehicle (EV) adoption trends.*
-- **Tech Stack**: Python, Random Forest, Streamlit, Pandas, NumPy, Scikit-learn.
-- **Key Features**: Predictive modeling for market trends and an interactive forecasting dashboard.
+### [2. ReelForge AI – Autonomous Creative Studio](https://github.com/ayus1234/reelforge-ai)
+*A complete 6-agent AI pipeline that automatically turns ideas into export-ready short videos.*
+- **Tech Stack**: Next.js, TypeScript, Runway API, ElevenLabs, FFmpeg, React.
+- **Key Features**: Auto-writes viral scripts, directs cinematic scenes, generates storyboards, animates clips, mixes audio, and scores viral potential.
 
-### [3. E-DALL-E: Image Generation System](https://github.com/ayus1234/E-DALL-E-Image-Generation-and-Expansion-System)
-*Combines DALL-E Mini with VQGAN+CLIP for advanced image generation and expansion.*
-- **Tech Stack**: Python, DALL-E Mini, VQGAN+CLIP, PyTorch, Deep Learning.
-- **Key Features**: Text-to-image synthesis with novel aspect-ratio expansion techniques.
+### [3. Email Triage AI – Command Center](https://github.com/ayus1234/ai-email-triage-agent-openenv)
+*A production-grade multi-agent AI system optimized for live email triage and workflow automation.*
+- **Tech Stack**: Python, FastAPI, Groq, Llama-3.1, OpenEnv, Docker.
+- **Key Features**: Autonomous classification, empathetic dynamic replying, secure department routing with transparent chain-of-thought and privacy masking.
 
 ## 🎓 About & Background
 
-I am a Computer Science student currently pursuing my **MCA at IIT Patna & IIIT Ranchi**. I am passionate about building innovative solutions at the intersection of web development and intelligence.
+I am a Computer Science student currently pursuing my **MCA at IIT Patna & IIIT Ranchi**. I am a full-stack developer and AI engineer passionate about building production-grade, multi-agent AI systems, sophisticated web applications, and autonomous agents that solve complex real-world problems.
 
 ### 📜 Certifications
 - **[Microsoft Azure AI Essentials](https://www.linkedin.com/learning/certificates/0e1255d6fd94595e6bb5b00fd22ec8b8e1665d920371672c5394b546c613e000?trk=share_certificate)**: Workloads and Machine Learning on Azure.
