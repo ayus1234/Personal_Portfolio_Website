@@ -8,28 +8,28 @@ A modern, high-performance portfolio website built with the latest web technolog
 
 ## 📸 Portfolio Walkthrough
 
-### 1. Hero
+### 1. Dynamic Hero Interface
 <div align="center">
   <img src="public/portfolio-1.png" alt="Hero Section" width="100%">
 </div>
 
 *The landing page features a modern, motion-rich hero section with dynamic typography, introducing the core expertise in AI and Full-Stack Engineering.*
 
-### 2. About Me
+### 2. Professional Profile & Tech Stack
 <div align="center">
   <img src="public/portfolio-2.png" alt="About and Skills" width="100%">
 </div>
 
 *A comprehensive overview of my professional background, paired with a visual grid highlighting proficiency in modern tools like Next.js, Python, and MongoDB Vector Search.*
 
-### 3. Projects
+### 3. Featured AI Projects
 <div align="center">
   <img src="public/portfolio-3.png" alt="Projects Section" width="100%">
 </div>
 
 *A dedicated showcase of production-grade AI applications, complete with high-quality mockups, tech stack details, and links to live repositories.*
 
-### 4. Contact Us
+### 4. Interactive Contact Form
 <div align="center">
   <img src="public/portfolio-4.png" alt="Contact Section" width="100%">
 </div>
